@@ -60,7 +60,7 @@ export class UserService {
       });
       if (!user) throw new NotFoundException('User not found');
       const { password, ...result } = user;
-      return result;
+      return result as UserEntity; //
     } catch (error) {
       if (error instanceof NotFoundException) {
         throw new NotFoundException(error.message);
