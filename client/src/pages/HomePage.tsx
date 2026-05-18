@@ -80,7 +80,7 @@ export default function HomePage() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Bienvenida {user.name} 😎</h1>
+      <h1>Bienvenida {user.name} </h1>
 
       <button
         onClick={() => {
